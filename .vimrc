@@ -57,7 +57,7 @@ call plug#end()
 
 " colo darcula
 colorscheme gruvbox
-highlight Normal guibg=black
+highlight Normal guibg=#282828
 
 
 " #### NERDTree #### 
@@ -81,7 +81,7 @@ nmap <leader>f :BLines!<CR>
 nmap <leader>c :Commands!<CR>
 
 
-" #### COC ####  Todo: Dosnt work! Fix It!
+" #### COC ####
 
 command! CocPluginInstall execute ":CocInstall coc-tsserver coc-eslint coc-prettier coc-json coc-html coc-css coc-explorer coc-floaterm coc-clangd"
 
@@ -95,3 +95,8 @@ nmap <leader>u :UndotreeToggle<CR>
 
 nmap <leader><right> :bnext<CR>
 nmap <leader><left> :bprev<CR>
+
+
+" #### Windows (GVIM) ####
+
+nmap <leader>win :set guifont=Consolas:h20<CR>
