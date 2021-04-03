@@ -57,7 +57,7 @@ call plug#end()
 
 " colo darcula
 colorscheme gruvbox
-highlight Normal guibg=none
+highlight Normal guibg=black
 
 
 " #### NERDTree #### 
