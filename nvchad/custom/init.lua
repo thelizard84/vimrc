@@ -1,5 +1,13 @@
+-- ~/.config/nvim/lua/custom/init.lua
+
+local M = {}
+
+local chadrc = require "custom.chadrc"
+
+M.ui = chadrc.ui
+
 -- Language English
-vim.api.nvim_exec ('language en_US', true)
+-- vim.api.nvim_exec ('language en_US', true)
 
 -- Colorcolumn @ Column 80
 vim.opt.colorcolumn = "80"
@@ -22,5 +30,6 @@ vim.cmd [[
 vim.opt.cursorcolumn = true
 
 -- Show Cursor as Block
-vim.opt.guicursor = 'i:block'
+-- vim.opt.guicursor = 'i:block'
 
+return M
